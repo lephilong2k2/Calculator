@@ -40,23 +40,26 @@
             // 
             // txtA
             // 
+            this.txtA.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtA.Location = new System.Drawing.Point(286, 123);
             this.txtA.Name = "txtA";
-            this.txtA.Size = new System.Drawing.Size(346, 38);
+            this.txtA.Size = new System.Drawing.Size(346, 45);
             this.txtA.TabIndex = 0;
             // 
             // txtB
             // 
+            this.txtB.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtB.Location = new System.Drawing.Point(286, 205);
             this.txtB.Name = "txtB";
-            this.txtB.Size = new System.Drawing.Size(346, 38);
+            this.txtB.Size = new System.Drawing.Size(346, 45);
             this.txtB.TabIndex = 0;
             // 
             // txtKetQua
             // 
+            this.txtKetQua.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtKetQua.Location = new System.Drawing.Point(286, 275);
             this.txtKetQua.Name = "txtKetQua";
-            this.txtKetQua.Size = new System.Drawing.Size(346, 38);
+            this.txtKetQua.Size = new System.Drawing.Size(346, 45);
             this.txtKetQua.TabIndex = 0;
             // 
             // lbA
