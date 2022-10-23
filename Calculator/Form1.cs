@@ -17,23 +17,37 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void btCong_Click(object sender, EventArgs e)
+        private void btCong_Click_1(object sender, EventArgs e)
         {
-            if (txtA.Text != String.Empty && txtB.Text != String.Empty)
-            {
-                double a = double.Parse(txtA.Text);
-                double b = double.Parse(txtB.Text);
-                double c = a + b;
-                txtKetQua.Text = c.ToString(); 
-            }
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            Calculation cal = new Calculation(a, b);
+            txtKetQua.Text = cal.Execute("+").ToString();
         }
 
         private void btTru_Click(object sender, EventArgs e)
         {
-            double a = double.Parse(txtA.Text);
-            double b = double.Parse(txtB.Text);
-            double c = a - b;
-            txtKetQua.Text = c.ToString();
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            Calculation cal = new Calculation(a, b);
+            txtKetQua.Text = cal.Execute("-").ToString();
+        }
+
+        private void btNhan_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            Calculation cal = new Calculation(a, b);
+            txtKetQua.Text = cal.Execute("*").ToString();
+        }
+
+        private void btChia_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(txtA.Text);
+            int b = int.Parse(txtB.Text);
+            Calculation cal = new Calculation(a, b);
+            txtKetQua.Text = cal.Execute("/").ToString();
+
         }
     }
 }
